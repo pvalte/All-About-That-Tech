@@ -49,7 +49,8 @@ header nav ul {
     padding-bottom: 10px;
 }
 
-header nav ul li a {
+header nav ul li a,
+header nav ul li button {
     margin: 10px 15px;
     text-decoration: none;
     color: var(--primary-color);
@@ -155,11 +156,8 @@ button:hover {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: midnightblue;
-    font-size: 100%;
     font-weight: bold;
     transition: color .1s;
-    margin-left: 16px;
 }
     
   
