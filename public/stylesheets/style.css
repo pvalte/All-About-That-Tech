@@ -8,21 +8,18 @@ body, html {
     margin: 0;
     font-family: sans-serif;
     color: #333;
+    background-color: mediumaquamarine;
 }
   
 a {
     text-decoration: none;
-    color: #225ca3;
+    color: mediumaquamarine;
     font-weight: bold;
     transition: color .1s;
 }
   
-a:hover {
-    color: #3486eb;
-}
-  
 button {
-    background-color: #225ca3;
+    background-color: midnightblue;
     border: 0;
     padding: 1%;
     color: white;
@@ -76,6 +73,7 @@ form label {
   
 header {
     border-bottom: 1px solid #ccc;
+    background-color: midnightblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,51 +95,30 @@ main {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: midnightblue;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
     margin-left: 16px;
 }
-  
-.btn-no-style:hover {
-    background: none;
-    color: #3486eb;
-}
-  
-.delete-post-btn {
-    background-color: #d41414;
-}
-  
-.delete-post-btn:hover {
-    background-color: #ff643d;
-}
-  
+    
 .post {
     margin-bottom: 2%;
     line-height: 150%;
 }
   
-.post .title span {
+.post .title {
     font-style: italic;
     font-size: 90%;
     color: #7d7d7d;
+    background-color: midnightblue;
 }
   
 .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
 }
-  
-.upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-}
-  
-.upvote-btn:hover {
-    background-color: #1f9c13;
-}
-  
+    
 .comment-form {
     margin-bottom: 5%;
 }
@@ -163,16 +140,4 @@ main {
   
 .new-post-form input {
     width: 300px;
-}
-  
-.edit-post-form {
-    margin-bottom: 5%;
-}
-  
-footer {
-    border-top: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    font-size: 110%;
 }
