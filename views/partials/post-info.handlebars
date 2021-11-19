@@ -1,11 +1,9 @@
 <article class="post">
   <div class="title">
-  Title: {{title}}
+  {{title}}
+  <span>Posted  by {{user.username}} on {{created_at}}</span>
   </div>
   <div class="post_text">
-  Text: {{post_text}}
-  </div>
-  <div class="meta">
-    by {{user.username}} on {{created_at}}
+  {{post_text}}
   </div>
 </article>

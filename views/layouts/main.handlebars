@@ -10,18 +10,41 @@
 
 <body>
   <div class="wrapper">
+    <!-- Header -->
     <header>
-      <h1>
-        <a href="/">All About That Tech</a>
-      </h1>
+      <!-- Navigation -->
       <nav>
-        <a href="/login">login</a>
+          <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/dashboard">Dashboard</a>
+                </li>
+                {{#if loggedIn}}
+                <li>
+                    <a href="/logout">Logout</a>
+                </li>
+                {{else}}
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+                {{/if}}
+            </ul>
+            <h1>
+                <a href="/">All About That Tech</a>
+            </h1>
       </nav>
     </header>
+
     <main>
       {{{ body }}}
     </main>
+
   </div>
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 
