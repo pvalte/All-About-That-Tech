@@ -1,13 +1,12 @@
 const router = require('express').Router();
 const { Post, User } = require('../../models');
-const sequelize = require('../../config/connection');
 
 router.get('/', (req, res) => {
     Post.findAll({
         attributes: [
             'id',
-            'post_url',
             'title',
+            'post_text',
             'created_at'
         ],
         order: [['created_at', 'DESC']],
@@ -32,8 +31,8 @@ router.get('/:id', (req, res) => {
         },
         attributes: [
             'id',
-            'post_url',
             'title',
+            'post_text',
             'created_at'
         ],
         include: [
@@ -60,7 +59,8 @@ router.post('/', (req, res) => {
     Post.create({
         title: req.body.title,
         post_text: req.body.post_text,
-        user_id: req.session.user_id
+        user_id: req.body.user_id
+        //user_id: req.session.user_id
     })
         .then(dbPostData => res.json(dbPostData))
         .catch(err => {
