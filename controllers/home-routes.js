@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { Post, User } = require('../models');
 
 router.get('/', (req, res) => {
+    console.log(req.session);
+    
     Post.findAll({
         attributes: [
             'id',
