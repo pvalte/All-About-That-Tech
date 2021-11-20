@@ -41,7 +41,7 @@ async function loginFormHandler(event) {
         });
         // check the response status
         if (response.ok) {
-            console.log('loggedIn');
+            console.log('winner!');
             document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
