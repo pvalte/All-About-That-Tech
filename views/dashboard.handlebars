@@ -1,10 +1,23 @@
+{{!-- add button link to add-post page --}}
+<section class="add-post-button">
+  <div class="title">
+    <a href="/dashboard/add-post">Add Post</a>
+  </div>
+</section>
+
+
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
-      {{> post-info post}}
+      <article class="post">
+        <div class="title">
+            <a href="/dashboard/edit/{{post.id}}">{{title}}</a>
+            <span>Posted by {{user.username}} on {{created_at}}</span>
+        </div>
+      </article>
     </li>
     {{/each}}
   </ol>
