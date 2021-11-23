@@ -84,6 +84,14 @@ header nav ul li button {
     padding: 5px 10px;
 }
 
+.post .title a {
+    font-style: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
 .post .title span {
     font-style: italic;
     font-size: 15px;
@@ -135,20 +143,15 @@ main {
 
 
 button {
-    background-color: midnightblue;
+    background-color: var(--tertiary-color);
     border: 0;
     padding: 1%;
-    color: white;
+    color: var(--secondary-color);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
 }
-  
-button:hover {
-    background-color: #3486eb;
-}
-  
   
 .btn-no-style {
     background: none;
@@ -159,7 +162,26 @@ button:hover {
     font-weight: bold;
     transition: color .1s;
 }
-    
+
+.add-post-button {
+    background-color: var(--tertiary-color);
+    border: 0;
+    width: 200px;
+    padding: 1%;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.add-post-button a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+}
   
 .edit-link {
     display: block;
