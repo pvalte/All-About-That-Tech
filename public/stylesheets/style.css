@@ -61,22 +61,18 @@ header nav ul li button {
 
 /* Body Start */
 
+/* Posts Start */
 .post-list {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
 .post {
-    margin-bottom: 2%;
+    margin-bottom: 10px;
     line-height: 150%;
     border: 1px solid var(--secondary-color);
 }
   
 .post .title {
-    font-style: bold;
-    font-size: 20px;
-    color: var(--primary-color);
     background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +97,8 @@ header nav ul li button {
 .post_text {
     padding: 5px 10px;
 }
+
+/* Posts End */
 
 textarea, input {
     padding: .5%;
@@ -187,26 +185,23 @@ button {
     display: block;
     margin: -1.5% 0 2% 0;
 }
-    
-.comment-form {
-    margin-bottom: 5%;
-}
   
+.new-post-form input {
+    width: 300px;
+}
+
+/* Single Post Start */
+
 .comment {
     padding: 1%;
     margin-bottom: 1%;
-}
-  
-.comment:nth-child(odd) {
-    background-color: #fff5eb;
+    border: 1px solid var(--secondary-color);
 }
   
 .comment .meta {
     font-size: 90%;
     margin-bottom: .5%;
-    opacity: .6;
+    color: gray;
 }
-  
-.new-post-form input {
-    width: 300px;
-}
+
+/* Single Post End */

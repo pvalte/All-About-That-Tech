@@ -1,13 +1,13 @@
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
-  <ol>
+  <ol class="post-list">
     {{#each posts as |post|}}
     <li>
       <article class="post">
         <div class="title">
             <a href="/dashboard/edit/{{post.id}}">{{title}}</a>
-            <span>Posted by {{user.username}} on {{created_at}}</span>
+            <span>Posted by {{user.username}} on {{format_date created_at}}</span>
         </div>
       </article>
     </li>
