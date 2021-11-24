@@ -6,10 +6,14 @@ A tech blog called All About That Tech; users can create, read, comment, update,
 Uses express-handlebars, express-session, MySQL2, Sequalize, connect-session-sequalize, dotenv, and bcrypt
 Features Model-View-Controller (MVC)
 
+Deployed Application: https://morning-tor-75643.herokuapp.com/
+
 Screenshots:
+![image](https://user-images.githubusercontent.com/86697117/143175906-d39b6c29-e2f4-456b-9f73-e482f15c2bb0.png)
 
+![image](https://user-images.githubusercontent.com/86697117/143175995-d2daa3a9-8512-46bf-8cf9-ccf6da1f7f1c.png)
 
-
+![image](https://user-images.githubusercontent.com/86697117/143176029-f096c775-8e5b-4816-adc1-8285e82f03fa.png)
 
 
 

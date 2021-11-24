@@ -198,7 +198,8 @@ button {
 }
 
 .comment-form textarea,
-.new-post-form textarea {
+.new-post-form textarea,
+.edit-post-form textarea {
     justify-content: center;
     width: 100%;
     line-height: 200%;
