@@ -1,18 +1,19 @@
 <article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-    </div>
-    <div>
-      <input name="post-text" type="text" value="{{post.post_text}}" />
-    </div>
-    <button type="submit">Update post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
+    <a href="/dashboard"> &larr; Back to dashboard</a>
+    <h2>
+        Edit Post
+    </h2>
+    <form class="edit-post-form">
+        <div>
+            <input name="post-title" type="text" value="{{post.title}}" />
+        </div>
+        <div>
+            <input name="post-text" type="text" value="{{post.post_text}}" />
+        </div>
+
+        <button type="submit">Update Post</button>
+        <button type="button" class="delete-post-btn">Delete Post</button>
+    </form>
 </article>
 
 <script src="/javascript/edit.js"></script>

@@ -1,24 +1,22 @@
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ol class="post-list">
-    {{#each posts as |post|}}
-    <li>
-      <article class="post">
-        <div class="title">
-            <a href="/dashboard/edit/{{post.id}}">{{title}}</a>
-            <span>Posted by {{user.username}} on {{format_date created_at}}</span>
-        </div>
-      </article>
-    </li>
-    {{/each}}
-  </ol>
+    <h2>Your Posts</h2>
+    <ol class="post-list">
+        {{#each posts as |post|}}
+        <li>
+            <article class="post">
+                <div class="title">
+                    <a href="/dashboard/edit/{{post.id}}">{{title}}</a>
+                    <span>Posted by {{user.username}} on {{format_date created_at}}</span>
+                </div>
+            </article>
+        </li>
+        {{/each}}
+    </ol>
 </section>
 {{/if}}
 
 {{!-- button link to add-post page --}}
 <section class="add-post-button">
-  <div class="title">
-    <a href="/dashboard/add-post">Add Post</a>
-  </div>
+    <a href="/dashboard/add-post">+ Add Post</a>
 </section>

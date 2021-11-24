@@ -150,8 +150,72 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.comment {
+    padding: 1%;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color);
+}
   
-.btn-no-style {
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.login-form,
+.signup-form,
+.comment-form,
+.new-post-form,
+.edit-post-form {
+    border: 1px solid var(--secondary-color);
+    padding: 30px 30px 0 30px;;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    font-size: 20px;
+}
+
+.comment-form {
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-top: 30px solid var(--secondary-color);
+}
+
+.edit-post-form {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.login-form input,
+.signup-form input,
+.new-post-form input,
+.edit-post-form input {
+    justify-content: center;
+    width: 100%;
+    line-height: 200%;
+    margin: 5px 0 10px 0;
+}
+
+.comment-form textarea,
+.new-post-form textarea {
+    justify-content: center;
+    width: 100%;
+    line-height: 200%;
+}
+
+.login-form button,
+.signup-form button,
+.comment-form button,
+.new-post-form button,
+.edit-post-form button {
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-link {
     background: none;
     border: none;
     padding: 0;
@@ -165,14 +229,9 @@ button {
     background-color: var(--tertiary-color);
     border: 0;
     width: 200px;
-    padding: 1%;
-    color: var(--secondary-color);
-    font-weight: bold;
-    transition: background-color .1s;
+    padding: 10px;
     cursor: pointer;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 20px;
 }
 
 .add-post-button a {
@@ -180,28 +239,3 @@ button {
     text-decoration: none;
     font-size: 20px;
 }
-  
-.edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-}
-  
-.new-post-form input {
-    width: 300px;
-}
-
-/* Single Post Start */
-
-.comment {
-    padding: 1%;
-    margin-bottom: 1%;
-    border: 1px solid var(--secondary-color);
-}
-  
-.comment .meta {
-    font-size: 90%;
-    margin-bottom: .5%;
-    color: gray;
-}
-
-/* Single Post End */
